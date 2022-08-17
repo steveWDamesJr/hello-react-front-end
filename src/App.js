@@ -1,11 +1,11 @@
 import React from 'react';
-import { Provider } from 'react-redux'
-import store from './redux/store'
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Greeting from "./components/Greeting"
+import { Provider } from 'react-redux';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import store from './redux/store';
+import Greeting from './components/Greeting';
 
 function App() {
-  return(
+  return (
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
@@ -13,7 +13,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </Provider>
-  )
+  );
 }
 
 export default App;
